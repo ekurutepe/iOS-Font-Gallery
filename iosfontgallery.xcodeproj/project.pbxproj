@@ -12,14 +12,14 @@
 		87091EDF1743A10100B20F2A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87091EDE1743A10100B20F2A /* CoreGraphics.framework */; };
 		87091EE51743A10100B20F2A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87091EE31743A10100B20F2A /* InfoPlist.strings */; };
 		87091EE71743A10100B20F2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87091EE61743A10100B20F2A /* main.m */; };
-		87091EEB1743A10100B20F2A /* MPDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87091EEA1743A10100B20F2A /* MPDAppDelegate.m */; };
+		87091EEB1743A10100B20F2A /* FJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87091EEA1743A10100B20F2A /* FJAppDelegate.m */; };
 		87091EED1743A10100B20F2A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 87091EEC1743A10100B20F2A /* Default.png */; };
 		87091EEF1743A10100B20F2A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87091EEE1743A10100B20F2A /* Default@2x.png */; };
 		87091EF11743A10200B20F2A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87091EF01743A10200B20F2A /* Default-568h@2x.png */; };
 		87091EF41743A10200B20F2A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87091EF21743A10200B20F2A /* MainStoryboard_iPhone.storyboard */; };
 		87091EF71743A10200B20F2A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87091EF51743A10200B20F2A /* MainStoryboard_iPad.storyboard */; };
-		87091EFA1743A10200B20F2A /* MPDMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87091EF91743A10200B20F2A /* MPDMasterViewController.m */; };
-		87091EFD1743A10200B20F2A /* MPDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87091EFC1743A10200B20F2A /* MPDDetailViewController.m */; };
+		87091EFA1743A10200B20F2A /* FJMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87091EF91743A10200B20F2A /* FJMasterViewController.m */; };
+		87091EFD1743A10200B20F2A /* FJDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87091EFC1743A10200B20F2A /* FJDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,17 +31,17 @@
 		87091EE41743A10100B20F2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		87091EE61743A10100B20F2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		87091EE81743A10100B20F2A /* iosfontgallery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iosfontgallery-Prefix.pch"; sourceTree = "<group>"; };
-		87091EE91743A10100B20F2A /* MPDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPDAppDelegate.h; sourceTree = "<group>"; };
-		87091EEA1743A10100B20F2A /* MPDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPDAppDelegate.m; sourceTree = "<group>"; };
+		87091EE91743A10100B20F2A /* FJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FJAppDelegate.h; sourceTree = "<group>"; };
+		87091EEA1743A10100B20F2A /* FJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FJAppDelegate.m; sourceTree = "<group>"; };
 		87091EEC1743A10100B20F2A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		87091EEE1743A10100B20F2A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		87091EF01743A10200B20F2A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		87091EF31743A10200B20F2A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		87091EF61743A10200B20F2A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		87091EF81743A10200B20F2A /* MPDMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPDMasterViewController.h; sourceTree = "<group>"; };
-		87091EF91743A10200B20F2A /* MPDMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPDMasterViewController.m; sourceTree = "<group>"; };
-		87091EFB1743A10200B20F2A /* MPDDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPDDetailViewController.h; sourceTree = "<group>"; };
-		87091EFC1743A10200B20F2A /* MPDDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPDDetailViewController.m; sourceTree = "<group>"; };
+		87091EF81743A10200B20F2A /* FJMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FJMasterViewController.h; sourceTree = "<group>"; };
+		87091EF91743A10200B20F2A /* FJMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FJMasterViewController.m; sourceTree = "<group>"; };
+		87091EFB1743A10200B20F2A /* FJDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FJDetailViewController.h; sourceTree = "<group>"; };
+		87091EFC1743A10200B20F2A /* FJDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FJDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,14 +88,14 @@
 		87091EE01743A10100B20F2A /* iosfontgallery */ = {
 			isa = PBXGroup;
 			children = (
-				87091EE91743A10100B20F2A /* MPDAppDelegate.h */,
-				87091EEA1743A10100B20F2A /* MPDAppDelegate.m */,
+				87091EE91743A10100B20F2A /* FJAppDelegate.h */,
+				87091EEA1743A10100B20F2A /* FJAppDelegate.m */,
 				87091EF21743A10200B20F2A /* MainStoryboard_iPhone.storyboard */,
 				87091EF51743A10200B20F2A /* MainStoryboard_iPad.storyboard */,
-				87091EF81743A10200B20F2A /* MPDMasterViewController.h */,
-				87091EF91743A10200B20F2A /* MPDMasterViewController.m */,
-				87091EFB1743A10200B20F2A /* MPDDetailViewController.h */,
-				87091EFC1743A10200B20F2A /* MPDDetailViewController.m */,
+				87091EF81743A10200B20F2A /* FJMasterViewController.h */,
+				87091EF91743A10200B20F2A /* FJMasterViewController.m */,
+				87091EFB1743A10200B20F2A /* FJDetailViewController.h */,
+				87091EFC1743A10200B20F2A /* FJDetailViewController.m */,
 				87091EE11743A10100B20F2A /* Supporting Files */,
 			);
 			path = iosfontgallery;
@@ -184,9 +184,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				87091EE71743A10100B20F2A /* main.m in Sources */,
-				87091EEB1743A10100B20F2A /* MPDAppDelegate.m in Sources */,
-				87091EFA1743A10200B20F2A /* MPDMasterViewController.m in Sources */,
-				87091EFD1743A10200B20F2A /* MPDDetailViewController.m in Sources */,
+				87091EEB1743A10100B20F2A /* FJAppDelegate.m in Sources */,
+				87091EFA1743A10200B20F2A /* FJMasterViewController.m in Sources */,
+				87091EFD1743A10200B20F2A /* FJDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +319,7 @@
 				87091F021743A10200B20F2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

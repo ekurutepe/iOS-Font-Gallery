@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MPDAppDelegate : UIResponder <UIApplicationDelegate>
+@interface FJAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

@@ -6,24 +6,29 @@
 //  Copyright (c) 2013 Moped Inc. All rights reserved.
 //
 
-#import "MPDDetailViewController.h"
+#import "FJDetailViewController.h"
 
-@interface MPDDetailViewController ()
+#define MPD_MIN_FONT_SIZE   12.0
+#define MPD_MAX_FONT_SIZE   48.0
+
+@interface FJDetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
 @end
 
-@implementation MPDDetailViewController
+@implementation FJDetailViewController
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
+- (void)setFontFamilyName:(NSString*)newDetailItem
 {
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
+    if (_fontFamilyName != newDetailItem) {
+        _fontFamilyName = newDetailItem;
         
-        // Update the view.
-        [self configureView];
+        _fontNames =[UIFont fontNamesForFamilyName:_fontFamilyName];
+        
+        self.title = newDetailItem;
+        [self.tableView reloadData];
     }
 
     if (self.masterPopoverController != nil) {
@@ -31,20 +36,12 @@
     }        
 }
 
-- (void)configureView
-{
-    // Update the user interface for the detail item.
 
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
-    }
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [self configureView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,5 +65,49 @@
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
 }
+
+#pragma mark Table View
+
+- (CGFloat) currentFontSize
+{
+    return MPD_MIN_FONT_SIZE + _fontSizeSlider.value * (MPD_MAX_FONT_SIZE - MPD_MIN_FONT_SIZE);
+}
+
+- (IBAction)sizeSliderValueChanged:(UISlider *)sender {
+    
+    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0]
+                  withRowAnimation:UITableViewRowAnimationNone];
+    
+}
+
+- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [_fontNames count];
+}
+
+- (UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"FontCell"];
+    
+    NSString * fontName = _fontNames[indexPath.row];
+    
+    cell.textLabel.font = [UIFont fontWithName:fontName size:[self currentFontSize]];
+    
+    cell.textLabel.text = fontName;
+    
+    return cell;
+}
+
+- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return MPD_MAX_FONT_SIZE*1.5;
+}
+
+
 
 @end

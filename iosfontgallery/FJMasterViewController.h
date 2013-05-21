@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class MPDDetailViewController;
+@class FJDetailViewController;
 
-@interface MPDMasterViewController : UITableViewController
+@interface FJMasterViewController : UITableViewController
 
-@property (strong, nonatomic) MPDDetailViewController *detailViewController;
+@property (strong, nonatomic) FJDetailViewController *detailViewController;
 
 @end

@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Moped Inc. All rights reserved.
 //
 
-#import "MPDAppDelegate.h"
+#import "FJAppDelegate.h"
 
-@implementation MPDAppDelegate
+@implementation FJAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

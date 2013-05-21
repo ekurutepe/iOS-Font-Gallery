@@ -3,6 +3,14 @@ iOS-Font-Gallery
 
 A simple app which shows all installed system fonts on iPhone and iPads
 
+###Font List:
+
+![List of all font families in the system](https://dl.dropboxusercontent.com/u/361895/font-list.png "List of all font families in the system")
+
+###Font Detail:
+
+![Font variants in a family including a resize slider](https://dl.dropboxusercontent.com/u/361895/font-details.png "Font variants in a family including a resize slider")
+
 License
 -
 

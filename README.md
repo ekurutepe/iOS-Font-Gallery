@@ -15,7 +15,7 @@ A simple font book app which shows all installed system fonts on iPhone and iPad
 License
 -
 
-Copyright (C) 2013 [Engin Kurutepe](https://twitter.com/ekurutepe)
+Copyright (C) 2013 [Engin Kurutepe](https://twitter.com/ekurutepe) – [Fifteen Jugglers Software](http://www.fifteenjugglers.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

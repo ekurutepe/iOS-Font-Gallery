@@ -13,7 +13,7 @@
 
 @interface FJDetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
-- (void)configureView;
+
 @end
 
 @implementation FJDetailViewController
